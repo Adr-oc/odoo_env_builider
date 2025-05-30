@@ -19,6 +19,7 @@
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
@@ -30,6 +31,9 @@ lerna-debug.log*
 # local env files
 .env*.local
 .env
+.env.development
+.env.test
+.env.production
 
 # vercel
 .vercel
@@ -41,7 +45,10 @@ next-env.d.ts
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
@@ -50,6 +57,17 @@ next-env.d.ts
 
 # Tauri build artifacts
 src-tauri/target/
+src-tauri/Cargo.lock
 
 # Cache
 .cache/
+
+# OS specific
+.directory
+.fuse_hidden*
+
+# Logs
+logs/
+
+# Optional: consider ignoring package-lock.json for collaborative projects
+# package-lock.json
